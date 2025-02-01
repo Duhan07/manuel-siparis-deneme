@@ -1,0 +1,92 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+.musteri-sec-btn {
+  margin-left: 40%;
+}
+
+:where(.css-dev-only-do-not-override-usln0u).ant-steps
+  .ant-steps-item-process
+  .ant-steps-item-icon
+  > .ant-steps-icon
+  .ant-steps-icon-dot {
+  color: orange;
+  background: black;
+}
+
+:where(.css-dev-only-do-not-override-usln0u).ant-steps
+  .ant-steps-item-finish
+  .ant-steps-item-icon
+  > .ant-steps-icon
+  .ant-steps-icon-dot {
+  color: orange;
+  background: black;
+}
+
+:where(.css-dev-only-do-not-override-usln0u).ant-steps
+  .ant-steps-item-finish
+  > .ant-steps-item-container
+  > .ant-steps-item-tail::after {
+  background-color: orange;
+}
+
+:where(.css-dev-only-do-not-override-usln0u).ant-steps
+  .ant-steps-item-process
+  > .ant-steps-item-container
+  > .ant-steps-item-content
+  > .ant-steps-item-title {
+  color: orange;
+}
+
+#scrollable-products {
+  overflow-y: visible;
+  max-height: calc(100vh - 200px); /* Sayfanın yüksekliğinden 200px çıkararak sabit alan bırakıyoruz */
+}
+
+#fixed-content {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px;   /* Ürün listesinin yüksekliğinden 200px sabit tutuyoruz */
+}
+
+#fixed-basket {
+  width: 25%;
+  position: fixed;
+  margin-top: 11%;
+}
+
+@media screen and (max-width: 932px) {
+  #fixed-basket {
+    margin-top: 12%;
+  }
+}
+
+
+.ant-anchor-link {
+  padding-inline: 8px 8px !important;
+}
+
+.ant-anchor-link:hover {
+  background-color: #f0f0f0;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.customer-avatar:hover {  
+  background-color: #f76f52;
+  font-size: 25px;
+}
+
+button:hover {
+  border-color: #f76f52 !important
+}
+
+.ant-segmented-item-label {
+  align-content: center;
+}
